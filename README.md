@@ -1,4 +1,4 @@
-# Portfolio Buid
+# Portfolio Build
 
 ## Description
 
@@ -15,8 +15,8 @@ The goal for the webpage is to meet accessibility standards. The source code sho
         3. Contact links
 2. The UI should scroll to the corresponding section when clicking on a link
 3. Clicking on an application image should open the page to that application
-4. Ensure heading attributes fall in sequential order
-5. Have a concise, descriptive title
+4. Provide a responsive web page layout for when it is resized.
+5. Provide a meaningfule README.md
 ```
 ## Table of Contents
 
@@ -46,10 +46,10 @@ The following steps should be used to install:
 ## Usage 
 
 Navigate to:
-[https://markhatthorinc.github.io/01-HTML-Git-CSS-Homework/](https://markhatthorinc.github.io/01-HTML-Git-CSS-Homework/)
+[https://markhatthorinc.github.io/02-Advanced-CSS/](https://markhatthorinc.github.io/02-Advanced-CSS/)
 
 **Image of Site:**
-![Horiseon Marketing Page](./assets/images/HoriseonSocialSoutionService.png)
+![Mark Harrison Portfolio](./assets/images/Mark_Harrison_Portfolio.png)
 
 
 ## Credits
@@ -83,7 +83,7 @@ SOFTWARE.
 
 ## Badges
 
-![badgeGT](https://img.shields.io/static/v1?label=%3CGT%20Bootcamp%3E&message=01-HTML-Git-CSS&color=blue)
+![badgeGT](https://img.shields.io/static/v1?label=%3CGT%20Bootcamp%3E&message=02-Advanced-CSS&color=blue)
 ![badgeCourse](https://img.shields.io/static/v1?label=%3CCourse%20Work%3E&message=02-Homework&color=blue)
 
 ## Features
@@ -97,19 +97,14 @@ There are no special features on this page.
 
 ```md
 Verify links work:
-1. Click on _Search Engine Optimization_
-    * Page should positon to Search Engine Optimzation section
-2. Click on _Online Reputation Management_
-    * Page should positon to Online Reputation Management section
-3. Click on _Social Media Marketing_
-    * Page should position to Social Media Marketing section
+1. Click on _Portfolio_
+    * Page should positon to Portfolio section
+2. Click on _Skills_
+    * Page should positon to Sills section
+3. Click on _01-HTML-Git-CSS_
+    * Page should open a new tab with the Horiseon Social Solution Service web page
 ```
 
 ```md
 Verify page layout and that all images display.
-```
-
-```md
-Verify branding:
-    * The letters "seo" in Horiseon should be offset in a different color.
 ```
