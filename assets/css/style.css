@@ -1,13 +1,20 @@
 /* Homework Assignment 01 */
 /* Mark Harison */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Default stying for the body */
 body {
     background-color: #d9dcd6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
 }
 
 /* Header Section */
@@ -18,130 +25,305 @@ body {
     color: #ffffff;
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
+    .header h1 {
+        display: inline-block;
+        font-size: 48px;
+    }
 
-.header h1 .seo {
-    color: #d9dcd6;
-}
+    .header h1 .seo {
+        color: #d9dcd6;
+    }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
+    .header div {
+        padding-top: 15px;
+        margin-right: 20px;
+        float: right;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
 
-.header div ul {
-    list-style-type: none;
-}
+    .header div ul {
+        list-style-type: none;
+    }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
+    .header div ul li {
+        display: inline-block;
+        margin-left: 25px;
+    }
 
+/* Defaults for links */
 a {
-    color: #ffffff;
+    background:0 0;
     text-decoration: none;
 }
 
+a:active, a:hover{
+    outline:0
+}
+
+/* Default paragraph size */
 p {
     font-size: 16px;
 }
 
-/* Marketing Meeting Image */
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
-}
-/* Contents Section */
-.contents {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+.parent-home .site-sidebar{
+    display:none
 }
 
-/* Individual Content Articles */
-.content {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+.main-navigation ul, .site-sidebar, .technogies-items{
+    list-style:none
 }
 
-.content img {
-    max-height: 200px;
+/* Define the Aside */
+.site-sidebar{
+    top:0;
+    bottom:0;
+    left:0;
+    position:fixed;
+    z-index:2;
+    width:25%;
+    font-size:14px;
+    color:#fff;
+    text-align:left;
+    background-color:rgba(145,13,13,.8)
 }
 
-.content h2 {
-    font-size: 36px;
-}
+    .site-sidebar .site-sidebar-inner{
+        position:relative;
+        height:100%;
+        overflow-y:auto;
+        padding:100px 50px
+    }
+    
+    .site-sidebar .block+.block{
+        margin-top:45px
+    }
 
-/* Position Images for Content */
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
+    /* Styles for Person Info */
+    .person{
+        text-align:center
+    }
+    
+        .person .person-avatar{
+            border-radius:25%;
+            margin-bottom:10px;
+            width:220px;
+            height:220px;
+        }
+    
+        .person .person-content{
+            margin-left:-120px;
+        }
+    
+        .person .person-content .person-title{
+            font-size:22px;
+            font-weight:300
+        }
+        .person .person-content .person-subtitle{
+            font-size:16px;
+            font-weight:100;
+        }
+    
+    /* Links in the Aside */
+    .site-sidebar-navigation{
+        margin:45px -20px;
+        line-height:30px;
+        position:relative;
+        font-size:14px
+    }
+    
+        .site-sidebar-navigation ul li{
+            padding:0 0
+        }
+    
+        .site-sidebar-navigation ul li a:hover, .site-sidebar-navigation ul li.current a{
+            color:#fff
+        }
+    
+        .site-sidebar-navigation a{
+            color:#ccc;
+            color:rgba(255,255,255,.6);
+            text-decoration: none;
+            display:block
+        }
+    /* Social Links in the Aside */
+    .block-social{
+        margin:45px -10px;
+        line-height:30px;
+        position:relative;
+    }
 
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
+        .block-title{
+           font-family: 'Dancing Script', cursive;
+           font-size:18px;
+        }
 
-/* Benefits Section */
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
+        .block-content{
+            padding: 5px;
+        }
+        .block-content a, .social-icons a{
+            padding: 5px;
+            color:rgba(255,255,255,.6)
+        }
+        
+        .block-content a:hover, .social-icons a:hover{
+            color:#fff
+        }
 
-/* Individual Benefit Articles */
-.benefit {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+    /* Web Site Main Page Section */
+    .site-main{
+        display: flex;
+        /* Align the child elements to the top of the parent */
+        align-items: flex-start;
+        margin: 0% auto;
+        margin-left:25%
+    }
+    
+    .site-main .site-main-inner, .outline_element{
+        position:relative
+    }
 
-.benefit h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+        .main-section{
+            /* margin-left: 3%; */
+            flex: 0 0 60%;
+            max-width:850px;
+            /* padding:10px; */
+            background-color:#fff;
+            color:#333
+        }
 
-.benefit img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+            .main-title{
+                line-height:1;
+                margin-bottom:15px;
+                color:#555
+            }
+    
+            .portfolio-section{
+                max-width:1400px;
+            }
+    
+            .outline{
+                font-size:16px;
+                margin-left:-50px
+            }
+    
+            .outline>ul, .outline>ul>li{
+                /* margin:10; */
+                padding-bottom:50px;
+            }
+    
+            .outline>ul>li{
+                display:block;
+                padding-bottom:50px;
+            }
+            
+            .outline_element-project{
+                padding-top:20px;
+                padding-bottom:20px;
+            }
 
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
+            .outline_element-contents{
+                margin-left:160px;
+                padding-top:20px;
+                padding-bottom:20px;
+            }
 
-.footer h2 {
-    font-size: 20px;
-}
+            /* .outline_element-contents{
+                margin-left:180px
+            } */
+    
+            .technogies-items li{
+                color: rgb(247, 247, 247);
+                background-color:rgba(175,34,34,.8);
+            }
+    
+            .portfolio-outline .project-link{
+                color:inherit
+            }
+    
+            .portfolio-outline .project-link:hover{
+                color:rgba(175,34,34,.8);
+            }
 
-.footer h2 .seo, p .seo {
-    color: #ffffff;
-}
+            .portfolio-outline .project-text{
+                width:50%;
+                float:left
+            }
 
-.footer p {
-    font-size: 20px;
-}
+            .portfolio-outline .outline_element.outline_element--current .project-text{
+                width:auto;
+                float:none
+            }
+
+            .portfolio-outline .project-image{
+                display:block;
+                width:50%;
+                position:relative;
+                max-width:100%;
+                max-height:250px;
+                padding-left:30px;
+                padding-bottom:50px;
+                text-align:center;
+                float:left;
+            }
+
+            .portfolio-outline .project-image img{
+                display:block;
+                max-width:150px;
+                max-height:250px;
+                padding-bottom:50px;
+            }
+
+            .portfolio-outline .project-image-overlay{
+                position: absolute;
+                bottom: 0;
+                background: rgb(0,0,0);
+                background: rgba(0,0,0,0.5);
+                color: #f1f1f1;
+                width:30%;
+                transition:.5s ease;
+                opacity:1;
+                font-size:20px;
+                padding:20px;
+                padding-bottom:20px;
+                text-align:center;
+            }
+
+            /* .portfolio-outline .project-image:hover .project-image-overlay{
+                opacity:0;
+            } */
+
+            .portfolio-outline .project-description:not(:first-child){
+                margin-top:5px
+            }
+
+            .portfolio-outline .project-description:not(:last-child){
+                margin-bottom:5px
+            }
+    
+            .portfolio-outline .project-technologies{
+                margin: top 30px
+            }
+    
+            .project-title{
+                font-weight:400;
+                font-size:30px;
+                line-height:1;
+                margin-bottom:.3em
+            }
+
+            .technologies-title{
+                font-size:14px;
+                color:#666;
+                padding-top:.5em;
+                padding-bottom:.5em
+            }
+
+            .technogies-items li{
+                display:inline-block
+            }
+    
+            .project-description{
+                position:relative
+            }
+    

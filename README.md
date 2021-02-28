@@ -2,19 +2,23 @@
 
 ## Description
 
-This project was to take existing code for the Horiseon webpage and refactor it. Horiseon is a marketing agency wanted to make their existing site more accessible while at the same time enhancing the site for branding. This optimization will also ensure that the webpage is optimized for search engines.
+This project was to build a portfolio for yourself that can be used in career development. It is to use the CSS we learned in class. We were told by the TAs that we can create our own template and did not have to create a page based upon the supplied image.
 
 ```md
 The goal for the webpage is to meet accessibility standards. The source code should:
-1. Consist of semantic HTML elements
-2. Include elements which follow a logical structure independent of styling and positioning
-3. Contain image tags with accessible alt attributes
+1. The portfolio page is to include:
+    1. Developer's name
+    2. A recent photo of the developer
+    3. Links to sections:
+        1. About the developer
+        2. Their work
+        3. Contact links
+2. The UI should scroll to the corresponding section when clicking on a link
+3. Clicking on an application image should open the page to that application
 4. Ensure heading attributes fall in sequential order
 5. Have a concise, descriptive title
 ```
 ## Table of Contents
-
-If your README is very long, add a table of contents to make it easy for users to find what they need.
 
 * [Installation](#installation)
 * [Usage](#usage)
